@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suniverse 工具與模板</title>
+<meta name="description" content="Suniverse 用 AI 做出來的工具與模板。做完一個放一個，能公開的都在這裡。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap">
+<style>
+:root{
+  --paper:#FAFAF8; --card:#FFFFFF; --ink:#16181C; --dim:#6C7169; --hair:#E4E3DC;
+  --accent:#1F5F4B; --accent-bg:rgba(31,95,75,.07);
+  --serif:'Fraunces',Georgia,'Songti TC',serif;
+  --sans:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang TC','Noto Sans TC',sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#131519; --card:#1A1D22; --ink:#E9E7E0; --dim:#979C94; --hair:#2A2E35;
+    --accent:#6FC3A4; --accent-bg:rgba(111,195,164,.12);
+  }
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:760px;margin:0 auto;padding:56px 22px 80px}
+.eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:var(--serif);font-size:clamp(32px,6vw,46px);font-weight:600;letter-spacing:-.02em;line-height:1.15;margin:12px 0 0;text-wrap:balance}
+.lede{color:var(--dim);font-size:17px;max-width:56ch;margin:16px 0 0}
+hr{border:0;height:1px;background:var(--hair);margin:40px 0}
+h2{font-family:var(--serif);font-size:21px;font-weight:600;letter-spacing:-.01em;margin:0 0 6px}
+.note{color:var(--dim);font-size:14.5px;margin-bottom:18px}
+.grid{display:grid;gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:4px;overflow:hidden}
+.item{background:var(--card);padding:18px 20px;display:block;color:inherit;text-decoration:none;transition:background .15s}
+a.item:hover{background:var(--accent-bg)}
+.t{font-weight:600;font-size:15.5px;display:flex;align-items:baseline;gap:9px;flex-wrap:wrap}
+.t .arrow{color:var(--accent);font-size:13px}
+.d{color:var(--dim);font-size:14.5px;margin-top:5px;max-width:60ch}
+.pill{font-size:11px;font-weight:600;letter-spacing:.04em;border-radius:3px;padding:2px 8px;
+  color:var(--accent);background:var(--accent-bg);white-space:nowrap}
+.pill.wip{color:var(--dim);background:transparent;border:1px solid var(--hair)}
+footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--hair);color:var(--dim);font-size:13.5px}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">Suniverse</div>
+  <h1>用 AI 做出來的工具與模板</h1>
+  <p class="lede">一人工作室，做完一個放一個。下面能點的都是現在就能用的，不用註冊、不用付費。
+  標「準備中」的還在做，做好才會放上來。</p>
+
+  <hr>
+
+  <h2>現在就能用</h2>
+  <p class="note">全部純前端、打開就能用，程式碼公開在 GitHub。</p>
+  <div class="grid">
+    <a class="item" href="https://sssunwl.github.io/KakaTools/" target="_blank" rel="noopener">
+      <div class="t">KakaTools 日常小工具 <span class="arrow">↗</span></div>
+      <div class="d">運單預填：丟進 Invoice 和 Packing List 的 PDF，自動抽出 20 多個欄位，支援 DHL／FedEx／UPS，一鍵複製。另有巴士到站、煮食靈感、食物轉盤。</div>
+    </a>
+    <a class="item" href="https://sssunwl.github.io/splitbed/" target="_blank" rel="noopener">
+      <div class="t">SplitBed 床位分配 <span class="arrow">↗</span></div>
+      <div class="d">住宿床位／房間自動排。實測一間札幌民宿改房型配置，一季多收 ¥253,700。無資料庫、無登入，資料不離開你的瀏覽器。</div>
+    </a>
+    <a class="item" href="https://sssunwl.github.io/sens/" target="_blank" rel="noopener">
+      <div class="t">Sens 知味 <span class="arrow">↗</span></div>
+      <div class="d">陪你把一杯咖啡從燙喝到涼，逐段記下風味怎麼變。給想開始練感官、又不知道從哪裡下手的人。</div>
+    </a>
+    <a class="item" href="https://sssunwl.github.io/AINewsSuni/" target="_blank" rel="noopener">
+      <div class="t">AINewsSuni 每日 AI 簡報 <span class="arrow">↗</span></div>
+      <div class="d">每天自動整理 AI 新聞與新工具，全繁體中文。附一份「AI OS 學院」，講怎麼把重複做的事固定成流程。</div>
+    </a>
+  </div>
+
+  <hr>
+
+  <h2>準備中</h2>
+  <p class="note">還沒做完，這裡先說清楚在做什麼，做好會放上來。</p>
+  <div class="grid">
+    <div class="item">
+      <div class="t">AI OS 入門包 <span class="pill wip">準備中</span></div>
+      <div class="d">給第一次認真用 AI 的人。重點不是教你下 prompt，是教你把每週重複做的那幾件事寫成一套流程，讓任何模型都能接手執行。</div>
+    </div>
+    <div class="item">
+      <div class="t">IG Carousel 模板組 <span class="pill wip">準備中</span></div>
+      <div class="d">給教練、房仲、攝影師、課程創作者用的輪播版型。免費版 Canva 就能編，3:4 不會被裁切，繁體中文與英文兩套。</div>
+    </div>
+  </div>
+
+  <footer>
+    Suniverse 的其他專案（自動情報、內容平台、技術實驗）在
+    <a href="https://sssunwl.github.io/AINewsSuni/" target="_blank" rel="noopener">專案清單</a>。
+    工作室主站 <a href="https://sssuni.com" target="_blank" rel="noopener">sssuni.com</a>。
+  </footer>
+</div>
+</body>
+</html>
